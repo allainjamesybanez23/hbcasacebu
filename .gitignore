@@ -1,0 +1,15 @@
+# Marketing source material, not part of the website
+fb-post/
+poster/
+prepphotos.py
+.impeccable/
+
+# Scratch / debug output
+chk2/
+chkframes/
+*.tmp
+
+# OS noise
+Thumbs.db
+desktop.ini
+.DS_Store

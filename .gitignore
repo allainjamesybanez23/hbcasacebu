@@ -4,6 +4,9 @@ poster/
 prepphotos.py
 .impeccable/
 
+# Setup notes, not part of the website
+README.md
+
 # Scratch / debug output
 chk2/
 chkframes/

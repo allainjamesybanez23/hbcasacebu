@@ -5,36 +5,36 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 <!-- ── LIVE URL ────────────────────────────────────────────────
-     Set to https://allainjamesybanez23.github.io/hbcasacebu
+     Set to https://hbcameracebu.netlify.app (Netlify site name: hbcameracebu)
      If you later buy a custom domain, replace every occurrence of that
      URL below, redeploy, then re-scrape in the Facebook debugger.
      Facebook needs ABSOLUTE urls here. Relative paths will not work.
      ──────────────────────────────────────────────────────────── -->
 
-<title>HB Casa Cebu | Studio Condo in Mactan, Saekyung Village 3, Lapu-Lapu City</title>
+<title>HB Camera Cebu | Studio Condo in Mactan, Saekyung Village 3, Lapu-Lapu City</title>
 <meta name="description" content="Quiet studio condo for rent in Saekyung Village Phase 3, Lapu-Lapu City, Cebu. Good for 4 guests, pet friendly, 200 Mbps unlimited fiber, pool and courts, about 20 minutes from Mactan-Cebu International Airport. Message us on Messenger to book." />
-<link rel="canonical" href="https://allainjamesybanez23.github.io/hbcasacebu/" />
+<link rel="canonical" href="https://hbcameracebu.netlify.app/" />
 <meta name="robots" content="index, follow" />
 <meta name="theme-color" content="#511320" />
 
 <!-- Open Graph: controls the Facebook / Messenger link preview card -->
 <meta property="og:type"        content="website" />
-<meta property="og:site_name"   content="HB Casa Cebu" />
-<meta property="og:url"         content="https://allainjamesybanez23.github.io/hbcasacebu/" />
-<meta property="og:title"       content="HB Casa Cebu | Studio Condo in Mactan, Cebu" />
+<meta property="og:site_name"   content="HB Camera Cebu" />
+<meta property="og:url"         content="https://hbcameracebu.netlify.app/" />
+<meta property="og:title"       content="HB Camera Cebu | Studio Condo in Mactan, Cebu" />
 <meta property="og:description" content="Good for 4 guests · pet friendly · 200 Mbps fiber · pool, pickleball &amp; basketball · about 20 min from Mactan-Cebu Airport. Message us on Messenger to check availability." />
 <meta property="og:locale"      content="en_PH" />
-<meta property="og:image"        content="https://allainjamesybanez23.github.io/hbcasacebu/img/ogcover.jpg" />
-<meta property="og:image:secure_url" content="https://allainjamesybanez23.github.io/hbcasacebu/img/ogcover.jpg" />
+<meta property="og:image"        content="https://hbcameracebu.netlify.app/img/ogcover.jpg" />
+<meta property="og:image:secure_url" content="https://hbcameracebu.netlify.app/img/ogcover.jpg" />
 <meta property="og:image:type"   content="image/jpeg" />
 <meta property="og:image:width"  content="1200" />
 <meta property="og:image:height" content="630" />
-<meta property="og:image:alt"    content="The studio at HB Casa Cebu: the bed, the couch and the balcony door in morning light" />
+<meta property="og:image:alt"    content="The studio at HB Camera Cebu: the bed, the couch and the balcony door in morning light" />
 
 <meta name="twitter:card"        content="summary_large_image" />
-<meta name="twitter:title"       content="HB Casa Cebu | Studio Condo in Mactan, Cebu" />
+<meta name="twitter:title"       content="HB Camera Cebu | Studio Condo in Mactan, Cebu" />
 <meta name="twitter:description" content="Good for 4 guests · pet friendly · 200 Mbps fiber · about 20 min from Mactan-Cebu Airport. Message us on Messenger." />
-<meta name="twitter:image"       content="https://allainjamesybanez23.github.io/hbcasacebu/img/ogcover.jpg" />
+<meta name="twitter:image"       content="https://hbcameracebu.netlify.app/img/ogcover.jpg" />
 
 <link rel="icon" type="image/png" sizes="64x64" href="img/favicon64.png" />
 <link rel="apple-touch-icon" sizes="180x180" href="img/appletouchicon.png" />
@@ -43,10 +43,10 @@
 {
   "@context": "https://schema.org",
   "@type": "LodgingBusiness",
-  "name": "HB Casa Cebu",
+  "name": "HB Camera Cebu",
   "description": "A studio condo rental in Saekyung Village Phase 3, Lapu-Lapu City, Cebu. Good for 4 guests, pet friendly, 200 Mbps unlimited fiber, balcony.",
-  "url": "https://allainjamesybanez23.github.io/hbcasacebu/",
-  "image": "https://allainjamesybanez23.github.io/hbcasacebu/img/ogcover.jpg",
+  "url": "https://hbcameracebu.netlify.app/",
+  "image": "https://hbcameracebu.netlify.app/img/ogcover.jpg",
   "petsAllowed": true,
   "address": {
     "@type": "PostalAddress",
@@ -55,7 +55,7 @@
     "addressRegion": "Cebu",
     "addressCountry": "PH"
   },
-  "sameAs": ["https://www.facebook.com/HBCasaCebu"],
+  "sameAs": ["https://www.facebook.com/HBCameraCebu"],
   "amenityFeature": [
     { "@type": "LocationFeatureSpecification", "name": "Swimming pool", "value": true },
     { "@type": "LocationFeatureSpecification", "name": "Free high-speed WiFi", "value": true },
@@ -150,6 +150,32 @@
   #sticky.tuck { transform: translateY(115%); }
   @media (max-width: 1023px) { body { padding-bottom: 92px; } html { scroll-padding-bottom: 104px; } }
 
+  /* Current section in the desktop nav */
+  #nav nav a[aria-current] { color: rgb(var(--fg)); background-size: 100% 1px; }
+
+  .skip { position: absolute; left: 1rem; top: -4rem; z-index: 60; padding: .75rem 1.25rem; border-radius: 999px;
+          background: rgb(var(--wine)); color: rgb(var(--cream)); font-size: 13px; transition: top .2s ease; }
+  .skip:focus { top: 1rem; }
+
+  /* ── Photo viewer: native <dialog>, so Esc, focus trap and backdrop come free ── */
+  .lb-open { position: absolute; inset: 0; z-index: 10; cursor: zoom-in; }
+  .lb-open:focus-visible { outline-offset: -5px; box-shadow: inset 0 0 0 7px rgb(var(--cream) / .9); }
+  #lightbox { width: 100vw; height: 100dvh; max-width: none; max-height: none; margin: 0; padding: 0; border: 0;
+              background: rgb(22 12 14 / .96); color: rgb(var(--cream)); }
+  #lightbox::backdrop { background: rgb(22 12 14 / .96); }
+  #lightbox[open] { display: flex; flex-direction: column; align-items: center; justify-content: center; animation: lbin .25s ease-out; }
+  #lightbox img { max-width: min(92vw, 1100px); max-height: calc(100dvh - 150px); object-fit: contain; border-radius: 2px; }
+  #lightbox button { position: absolute; display: flex; align-items: center; justify-content: center; width: 48px; height: 48px;
+                     border-radius: 999px; border: 1px solid rgb(var(--cream) / .3); color: rgb(var(--cream));
+                     background: rgb(22 12 14 / .6); transition: background-color .2s ease, border-color .2s ease; }
+  #lightbox button:hover { background: rgb(var(--wine)); border-color: rgb(var(--cream) / .6); }
+  #lightbox button:focus-visible { outline-color: rgb(var(--cream)); box-shadow: none; border-radius: 999px; }
+  #lb-close { top: 16px; right: 16px; }
+  #lb-prev { left: 16px; top: 50%; margin-top: -24px; }
+  #lb-next { right: 16px; top: 50%; margin-top: -24px; }
+  @media (max-width: 639px) { #lb-prev, #lb-next { top: auto; bottom: 20px; margin-top: 0; } }
+  @keyframes lbin { from { opacity: 0 } to { opacity: 1 } }
+
   @media (max-width: 380px) { h1 { font-size: 2.5rem !important; } }
 
   @media (prefers-reduced-motion: reduce) {
@@ -162,6 +188,7 @@
 
 <body class="font-sans antialiased">
 
+<a href="#unit" class="skip">Skip to the unit</a>
 <span id="top-sentinel" aria-hidden="true" class="absolute top-0 h-px w-px"></span>
 
 <!-- ══════════════ NAV ══════════════ -->
@@ -170,11 +197,11 @@
 
     <a href="#top" class="flex items-center gap-3">
       <span class="flex h-11 w-11 shrink-0 items-center justify-center overflow-hidden rounded-full bg-cream">
-        <img src="img/hbmark.png" alt="HB Casa Cebu" width="128" height="128" fetchpriority="high" class="h-[86%] w-[86%] object-contain" />
+        <img src="img/hbmark.png" alt="HB Camera Cebu" width="128" height="128" fetchpriority="high" class="h-[86%] w-[86%] object-contain" />
       </span>
       <span class="leading-tight">
-        <span class="block font-display text-lg tracking-wide text-fg">HB Casa Cebu</span>
-        <span class="block text-[11px] tracking-[.18em] text-dim">Saekyung Village 3</span>
+        <span class="block font-display text-lg tracking-wide text-fg">HB Camera Cebu</span>
+        <span class="block text-xs tracking-[.18em] text-dim">Saekyung Village 3</span>
       </span>
     </a>
 
@@ -188,11 +215,11 @@
     </nav>
 
     <div class="flex items-center gap-3">
-      <a data-fb="messenger" href="https://m.me/HBCasaCebu" target="_blank" rel="noopener noreferrer"
+      <a data-fb="messenger" href="https://m.me/HBCameraCebu" target="_blank" rel="noopener noreferrer"
          class="btn whitespace-nowrap hidden rounded-full bg-wine px-6 py-2.5 text-[12px] font-semibold tracking-[.14em] text-cream hover:opacity-90 sm:inline-flex">
         Message us
       </a>
-      <button id="burger" aria-label="Open menu" aria-expanded="false"
+      <button id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"
               class="flex h-11 w-11 items-center justify-center rounded-full border hair text-fg lg:hidden">
         <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.4" viewBox="0 0 24 24"><path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/></svg>
       </button>
@@ -222,13 +249,13 @@
         Where the island<br /><span class="italic">slows down.</span>
       </h1>
 
-      <p class="mt-7 max-w-md text-[15px] font-light leading-relaxed text-dim">
+      <p class="mt-7 max-w-md text-[15px] leading-relaxed text-dim">
         A warm, unhurried studio on the fifth floor of Saekyung Village Phase&nbsp;3,
         twenty minutes from the airport and quiet enough to actually rest.
       </p>
 
       <div class="mt-9 flex flex-col gap-3 sm:flex-row sm:gap-4">
-        <a data-fb="messenger" href="https://m.me/HBCasaCebu" target="_blank" rel="noopener noreferrer"
+        <a data-fb="messenger" href="https://m.me/HBCameraCebu" target="_blank" rel="noopener noreferrer"
            class="btn whitespace-nowrap inline-flex items-center justify-center gap-3 rounded-full bg-wine px-9 py-4 text-[12px] font-semibold tracking-[.16em] text-cream hover:opacity-90">
           <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.3 2 2 6.2 2 11.7c0 3.1 1.4 5.9 3.7 7.7v3.8l3.4-1.9c.9.3 1.9.4 2.9.4 5.7 0 10-4.2 10-9.7S17.7 2 12 2zm1 12.6-2.6-2.7-5 2.7 5.5-5.8 2.6 2.7 4.9-2.7-5.4 5.8z"/></svg>
           Message us
@@ -237,6 +264,11 @@
           View the unit
         </a>
       </div>
+
+      <p class="mt-6 flex items-center gap-2.5 text-[13px] text-dim">
+        <span class="h-1.5 w-1.5 shrink-0 rounded-full bg-wine" aria-hidden="true"></span>
+        Messages answered daily. Rates and open dates sent on inquiry.
+      </p>
     </div>
 
     <div class="relative order-1 lg:order-2">
@@ -253,10 +285,10 @@
 <!-- ══════════════ FACT BAND: moved out of the hero, where it belongs ══════════════ -->
 <section class="border-y hair bg-surface">
   <div class="mx-auto grid max-w-[1400px] grid-cols-2 divide-x divide-[rgb(var(--line)/var(--line-a))] px-6 lg:grid-cols-4 lg:px-10">
-    <div class="rise px-4 py-7 text-center lg:py-9"><p class="font-display text-3xl text-fg">4</p><p class="mt-1 text-[11px] tracking-[.16em] text-dim">Guests</p></div>
-    <div class="rise rise-2 px-4 py-7 text-center lg:py-9"><p class="font-display text-3xl text-fg">Pets</p><p class="mt-1 text-[11px] tracking-[.16em] text-dim">Welcome</p></div>
-    <div class="rise rise-3 border-t hair px-4 py-7 text-center lg:border-t-0 lg:py-9"><p class="font-display text-3xl text-fg">200<span class="text-lg"> Mbps</span></p><p class="mt-1 text-[11px] tracking-[.16em] text-dim">Unlimited fiber</p></div>
-    <div class="rise rise-4 border-t hair px-4 py-7 text-center lg:border-t-0 lg:py-9"><p class="font-display text-3xl text-fg">9.7<span class="text-lg"> km</span></p><p class="mt-1 text-[11px] tracking-[.16em] text-dim">To the airport</p></div>
+    <div class="rise px-4 py-7 text-center lg:py-9"><p class="font-display text-3xl text-fg">4</p><p class="mt-1 text-xs tracking-[.16em] text-dim">Guests</p></div>
+    <div class="rise rise-2 px-4 py-7 text-center lg:py-9"><p class="font-display text-3xl text-fg">Pets</p><p class="mt-1 text-xs tracking-[.16em] text-dim">Welcome</p></div>
+    <div class="rise rise-3 border-t hair px-4 py-7 text-center lg:border-t-0 lg:py-9"><p class="font-display text-3xl text-fg">200<span class="text-lg"> Mbps</span></p><p class="mt-1 text-xs tracking-[.16em] text-dim">Unlimited fiber</p></div>
+    <div class="rise rise-4 border-t hair px-4 py-7 text-center lg:border-t-0 lg:py-9"><p class="font-display text-3xl text-fg">9.7<span class="text-lg"> km</span></p><p class="mt-1 text-xs tracking-[.16em] text-dim">To the airport</p></div>
   </div>
 </section>
 
@@ -269,7 +301,7 @@
         <h2 class="font-display text-4xl font-light leading-[1.05] text-fg sm:text-5xl lg:text-6xl">
           One bright room,<br />space for four.
         </h2>
-        <p class="mt-8 max-w-xl text-[16px] font-light leading-relaxed text-dim">
+        <p class="mt-8 max-w-xl text-[16px] leading-relaxed text-dim">
           An open studio: one big bed, a couch that folds down into a floor bed, a kitchenette and a
           dining table, all in the same bright room. Comfortable for a couple, a small family, or four
           friends who do not mind sharing a space. Fifth floor, facing away from the pool, so mornings
@@ -277,17 +309,17 @@
         </p>
 
         <ul class="mt-12 grid gap-x-10 gap-y-0 sm:grid-cols-2">
-          <li class="border-t hair py-3.5 text-[14px] font-light text-fg">Air-conditioned room</li>
-          <li class="border-t hair py-3.5 text-[14px] font-light text-fg">Converge 200 Mbps unlimited internet</li>
-          <li class="border-t hair py-3.5 text-[14px] font-light text-fg">42-inch TV with Netflix &amp; YouTube</li>
-          <li class="border-t hair py-3.5 text-[14px] font-light text-fg">Kitchenette: electric stove, rice cooker, microwave</li>
-          <li class="border-t hair py-3.5 text-[14px] font-light text-fg">Washing machine in the unit</li>
-          <li class="border-t hair py-3.5 text-[14px] font-light text-fg">Dining table &amp; work desk</li>
-          <li class="border-t hair py-3.5 text-[14px] font-light text-fg">Pets welcome</li>
-          <li class="border-t hair py-3.5 text-[14px] font-light text-fg">Parking &amp; elevator access</li>
+          <li class="border-t hair py-3.5 text-[14px] text-fg">Air-conditioned room</li>
+          <li class="border-t hair py-3.5 text-[14px] text-fg">Converge 200 Mbps unlimited internet</li>
+          <li class="border-t hair py-3.5 text-[14px] text-fg">42-inch TV with Netflix &amp; YouTube</li>
+          <li class="border-t hair py-3.5 text-[14px] text-fg">Kitchenette: electric stove, rice cooker, microwave</li>
+          <li class="border-t hair py-3.5 text-[14px] text-fg">Washing machine in the unit</li>
+          <li class="border-t hair py-3.5 text-[14px] text-fg">Dining table &amp; work desk</li>
+          <li class="border-t hair py-3.5 text-[14px] text-fg">Pets welcome</li>
+          <li class="border-t hair py-3.5 text-[14px] text-fg">Parking &amp; elevator access</li>
         </ul>
 
-        <a data-fb="messenger" href="https://m.me/HBCasaCebu" target="_blank" rel="noopener noreferrer"
+        <a data-fb="messenger" href="https://m.me/HBCameraCebu" target="_blank" rel="noopener noreferrer"
            class="btn whitespace-nowrap mt-12 hidden items-center gap-3 rounded-full bg-wine px-8 py-4 text-[12px] font-semibold tracking-[.16em] text-cream hover:opacity-90 lg:inline-flex">
           Message us
           <svg class="h-4 w-4" fill="none" stroke="currentColor" stroke-width="1.4" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M5 12h14m0 0l-6-6m6 6l-6 6"/></svg>
@@ -313,8 +345,9 @@
 
     <div class="rise max-w-xl">
       <h2 class="font-display text-4xl font-light leading-tight text-fg sm:text-5xl">A look inside</h2>
-      <p class="mt-5 text-[15px] font-light leading-relaxed text-dim">
+      <p class="mt-5 text-[15px] leading-relaxed text-dim">
         Simple, warm, and kept clean. What you see is what you get.
+        <span class="mt-1 block text-[13px]">Tap any photo to see it larger.</span>
       </p>
     </div>
 
@@ -380,30 +413,41 @@
 
 <!-- ══════════════ WALKTHROUGH: the reel, click to play ══════════════ -->
 <section id="tour" class="py-24 lg:py-32">
-  <div class="mx-auto max-w-[1400px] px-6 lg:px-10">
-    <div class="rise mx-auto max-w-xl text-center">
-      <h2 class="font-display text-4xl font-light leading-tight text-fg sm:text-5xl">Walk through it</h2>
-      <p class="mx-auto mt-5 max-w-md text-[15px] font-light leading-relaxed text-dim">
-        The whole studio from the door to the balcony.
+  <div class="mx-auto grid max-w-[1100px] items-center gap-12 px-6 lg:grid-cols-[minmax(0,5fr)_minmax(0,4fr)] lg:gap-20 lg:px-10">
+
+    <div class="rise text-center lg:text-left">
+      <p class="text-xs tracking-[.3em] text-dim">VIDEO TOUR</p>
+      <h2 class="mt-5 font-display text-4xl font-light leading-[1.05] text-fg sm:text-5xl lg:text-6xl">Walk through it</h2>
+      <p class="mx-auto mt-6 max-w-md text-[15px] leading-relaxed text-dim lg:mx-0">
+        The whole studio from the door to the balcony, filmed as it is.
       </p>
+      <div class="mt-9 hidden flex-wrap items-center gap-x-7 gap-y-3 lg:flex">
+        <a data-fb="messenger" href="https://m.me/HBCameraCebu" target="_blank" rel="noopener noreferrer"
+           class="btn whitespace-nowrap inline-flex items-center gap-3 rounded-full bg-wine px-8 py-4 text-[12px] font-semibold tracking-[.16em] text-cream hover:opacity-90">
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.3 2 2 6.2 2 11.7c0 3.1 1.4 5.9 3.7 7.7v3.8l3.4-1.9c.9.3 1.9.4 2.9.4 5.7 0 10-4.2 10-9.7S17.7 2 12 2zm1 12.6-2.6-2.7-5 2.7 5.5-5.8 2.6 2.7 4.9-2.7-5.4 5.8z"/></svg>
+          Ask about your dates
+        </a>
+        <a href="#location" class="ulink inline-flex min-h-[44px] items-center text-[13px] text-fg">See where it is</a>
+      </div>
     </div>
 
-    <div class="rise rise-2 mx-auto mt-12 w-full max-w-[340px]">
+    <div class="rise rise-2 mx-auto w-full max-w-[340px] lg:max-w-[360px]">
       <video
-        class="aspect-[9/16] w-full rounded-sm bg-surface object-cover"
+        class="aspect-[9/16] w-full rounded-sm bg-surface object-cover shadow-[0_30px_60px_-30px_rgb(81_19_32/.45)]"
         src="img/tour.mp4"
         poster="img/tourposter.jpg"
         preload="none"
         controls
         playsinline
-        aria-label="Walkthrough video of the studio at HB Casa Cebu"></video>
+        aria-label="Walkthrough video of the studio at HB Camera Cebu"></video>
       <p class="mt-3 text-center text-[12px] tracking-[.14em] text-dim">Tap to play, sound on</p>
     </div>
+
   </div>
 </section>
 
 <!-- ══════════════ THE VILLAGE: divided list, no cards ══════════════ -->
-<section id="amenities" class="py-24 lg:py-32">
+<section id="amenities" class="border-t hair py-24 lg:py-32">
   <div class="mx-auto max-w-[1400px] px-6 lg:px-10">
 
     <div class="grid gap-12 lg:grid-cols-[minmax(0,4fr)_minmax(0,7fr)] lg:gap-20">
@@ -411,36 +455,42 @@
         <h2 class="font-display text-4xl font-light leading-[1.05] text-fg sm:text-5xl">
           Everything<br />within the gate
         </h2>
-        <p class="mt-6 max-w-sm text-[15px] font-light leading-relaxed text-dim">
+        <p class="mt-6 max-w-sm text-[15px] leading-relaxed text-dim">
           Saekyung Village Phase&nbsp;3 is a gated residential community, so you can swim, play,
           and pick up your essentials without ever leaving the property.
         </p>
+        <figure class="zoom mt-10 rounded-sm">
+          <img src="img/court.jpg" alt="The pickleball court between the residential buildings at Saekyung Village Phase 3"
+               width="1000" height="750" loading="lazy" decoding="async"
+               class="aspect-[4/3] w-full object-cover" />
+        </figure>
+        <p class="mt-4 text-[12px] tracking-[.16em] text-dim">The pickleball court</p>
       </div>
 
       <dl class="rise rise-2">
         <div class="flex items-baseline gap-6 border-t hair py-6">
           <dt class="w-36 shrink-0 font-display text-xl text-fg sm:w-44">Swimming pool</dt>
-          <dd class="text-[14px] font-light leading-relaxed text-dim">Shared village pool, a short walk from the building.</dd>
+          <dd class="text-[14px] leading-relaxed text-dim">Shared village pool, a short walk from the building.</dd>
         </div>
         <div class="flex items-baseline gap-6 border-t hair py-6">
           <dt class="w-36 shrink-0 font-display text-xl text-fg sm:w-44">Pickleball court</dt>
-          <dd class="text-[14px] font-light leading-relaxed text-dim">On-site court for a morning or sunset game.</dd>
+          <dd class="text-[14px] leading-relaxed text-dim">On-site court for a morning or sunset game.</dd>
         </div>
         <div class="flex items-baseline gap-6 border-t hair py-6">
           <dt class="w-36 shrink-0 font-display text-xl text-fg sm:w-44">Basketball court</dt>
-          <dd class="text-[14px] font-light leading-relaxed text-dim">Full court inside the village grounds.</dd>
+          <dd class="text-[14px] leading-relaxed text-dim">Full court inside the village grounds.</dd>
         </div>
         <div class="flex items-baseline gap-6 border-t hair py-6">
           <dt class="w-36 shrink-0 font-display text-xl text-fg sm:w-44">Guarded entry</dt>
-          <dd class="text-[14px] font-light leading-relaxed text-dim">Manned gate and security personnel on the property.</dd>
+          <dd class="text-[14px] leading-relaxed text-dim">Manned gate and security personnel on the property.</dd>
         </div>
         <div class="flex items-baseline gap-6 border-t hair py-6">
           <dt class="w-36 shrink-0 font-display text-xl text-fg sm:w-44">Store downstairs</dt>
-          <dd class="text-[14px] font-light leading-relaxed text-dim">A sari-sari store inside the building, and a 7-Eleven nearby.</dd>
+          <dd class="text-[14px] leading-relaxed text-dim">A sari-sari store inside the building, and a 7-Eleven nearby.</dd>
         </div>
         <div class="flex items-baseline gap-6 border-y hair py-6">
           <dt class="w-36 shrink-0 font-display text-xl text-fg sm:w-44">Parking &amp; elevator</dt>
-          <dd class="text-[14px] font-light leading-relaxed text-dim">Parking access, elevator to the fifth floor, and pets are welcome.</dd>
+          <dd class="text-[14px] leading-relaxed text-dim">Parking access, elevator to the fifth floor, and pets are welcome.</dd>
         </div>
       </dl>
     </div>
@@ -473,27 +523,27 @@
           Mactan,<br />at arm's length
         </h2>
 
-        <p class="mt-6 max-w-md text-[15px] font-light leading-relaxed text-cream/80">
+        <p class="mt-6 max-w-md text-[15px] leading-relaxed text-cream/80">
           Saekyung Village Phase&nbsp;3, Lapu-Lapu City, Cebu. Close enough to the
           airport for a late flight, close enough to the water for an early swim.
         </p>
 
         <div class="mt-10">
           <div class="flex items-baseline justify-between gap-6 border-t border-cream/20 py-5">
-            <span class="text-[14px] font-light text-cream">Mactan-Cebu International Airport</span>
-            <span class="shrink-0 text-right font-display text-xl text-cream">9.7 km<span class="block text-[11px] tracking-[.14em] text-cream/75">about 20 min</span></span>
+            <span class="text-[14px] text-cream">Mactan-Cebu International Airport</span>
+            <span class="shrink-0 text-right font-display text-xl text-cream">9.7 km<span class="block text-xs tracking-[.14em] text-cream/75">about 20 min</span></span>
           </div>
           <div class="flex items-baseline justify-between gap-6 border-t border-cream/20 py-5">
-            <span class="text-[14px] font-light text-cream">Marigondon, Vano, Tonggo and Suba-Basbas beaches</span>
-            <span class="shrink-0 text-[11px] tracking-[.14em] text-cream/75">Short ride</span>
+            <span class="text-[14px] text-cream">Marigondon, Vano, Tonggo and Suba-Basbas beaches</span>
+            <span class="shrink-0 text-xs tracking-[.14em] text-cream/75">Short ride</span>
           </div>
           <div class="flex items-baseline justify-between gap-6 border-y border-cream/20 py-5">
-            <span class="text-[14px] font-light text-cream">7-Eleven, sari-sari store and local retail</span>
-            <span class="shrink-0 text-[11px] tracking-[.14em] text-cream/75">Walkable</span>
+            <span class="text-[14px] text-cream">7-Eleven, sari-sari store and local retail</span>
+            <span class="shrink-0 text-xs tracking-[.14em] text-cream/75">Walkable</span>
           </div>
         </div>
 
-        <p class="mt-6 text-[13px] font-light leading-relaxed text-cream/75">
+        <p class="mt-6 text-[13px] leading-relaxed text-cream/75">
           Plenty of private resorts along the Marigondon stretch too. Message us and we'll point you
           to the ones we like.
         </p>
@@ -516,13 +566,13 @@
       Tell us your dates.
     </h2>
 
-    <p class="mx-auto mt-6 max-w-lg text-[15px] font-light leading-relaxed text-dim">
+    <p class="mx-auto mt-6 max-w-lg text-[15px] leading-relaxed text-dim">
       We handle everything through our Facebook page. Send us a message and we'll come back
       with availability, rates, and check-in details.
     </p>
 
     <div class="mt-10 flex justify-center">
-      <a data-fb="messenger" href="https://m.me/HBCasaCebu" target="_blank" rel="noopener noreferrer"
+      <a data-fb="messenger" href="https://m.me/HBCameraCebu" target="_blank" rel="noopener noreferrer"
          class="btn whitespace-nowrap inline-flex w-full items-center justify-center gap-3 rounded-full bg-wine px-9 py-4 text-[12px] font-semibold tracking-[.16em] text-cream hover:opacity-90 sm:w-auto">
         <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.3 2 2 6.2 2 11.7c0 3.1 1.4 5.9 3.7 7.7v3.8l3.4-1.9c.9.3 1.9.4 2.9.4 5.7 0 10-4.2 10-9.7S17.7 2 12 2zm1 12.6-2.6-2.7-5 2.7 5.5-5.8 2.6 2.7 4.9-2.7-5.4 5.8z"/></svg>
         Message us
@@ -531,26 +581,26 @@
 
     <dl class="mx-auto mt-12 grid max-w-xl grid-cols-1 gap-px overflow-hidden rounded-sm bg-wine/20 text-left sm:grid-cols-3">
       <div class="bg-bg px-5 py-5">
-        <dt class="text-[11px] tracking-[.16em] text-dim">Rates</dt>
-        <dd class="mt-1.5 text-[14px] font-light text-fg">Quoted on inquiry</dd>
+        <dt class="text-xs tracking-[.16em] text-dim">Rates</dt>
+        <dd class="mt-1.5 text-[14px] text-fg">Quoted on inquiry</dd>
       </div>
       <div class="bg-bg px-5 py-5">
-        <dt class="text-[11px] tracking-[.16em] text-dim">Check-in / out</dt>
-        <dd class="mt-1.5 text-[14px] font-light text-fg">Arranged with you directly</dd>
+        <dt class="text-xs tracking-[.16em] text-dim">Check-in / out</dt>
+        <dd class="mt-1.5 text-[14px] text-fg">Arranged with you directly</dd>
       </div>
       <div class="bg-bg px-5 py-5">
-        <dt class="text-[11px] tracking-[.16em] text-dim">Minimum stay</dt>
-        <dd class="mt-1.5 text-[14px] font-light text-fg">Ask us, it depends on the dates</dd>
+        <dt class="text-xs tracking-[.16em] text-dim">Minimum stay</dt>
+        <dd class="mt-1.5 text-[14px] text-fg">Ask us, it depends on the dates</dd>
       </div>
     </dl>
 
-    <p class="mt-7 text-[13px] font-light text-dim">
+    <p class="mt-7 text-[13px] text-dim">
       Prefer to browse first?
-      <a data-fb="page" href="https://www.facebook.com/HBCasaCebu" target="_blank" rel="noopener noreferrer"
+      <a data-fb="page" href="https://www.facebook.com/HBCameraCebu" target="_blank" rel="noopener noreferrer"
          class="ulink font-medium text-wine">See our photos on Facebook</a>
     </p>
 
-    <p class="mt-8 text-[12px] font-light text-dim">
+    <p class="mt-8 text-[12px] text-dim">
       Messages answered daily · English &amp; Bisaya
     </p>
   </div>
@@ -564,26 +614,41 @@
         <img src="img/hbmark.png" alt="" width="128" height="128" loading="lazy" decoding="async" class="h-[86%] w-[86%] object-contain" />
       </span>
       <span class="leading-tight">
-        <span class="block font-display text-base tracking-wide text-fg">HB Casa Cebu</span>
-        <span class="block text-[11px] tracking-[.16em] text-dim">Saekyung Village 3, Lapu-Lapu City, Cebu</span>
+        <span class="block font-display text-base tracking-wide text-fg">HB Camera Cebu</span>
+        <span class="block text-xs tracking-[.16em] text-dim">Saekyung Village 3, Lapu-Lapu City, Cebu</span>
       </span>
     </div>
     <div class="flex items-center gap-4 text-[12px] tracking-wide text-dim">
-      <a data-fb="page" href="https://www.facebook.com/HBCasaCebu" target="_blank" rel="noopener noreferrer" class="ulink inline-flex min-h-[44px] items-center px-2 hover:text-fg">Facebook</a>
-      <a data-fb="messenger" href="https://m.me/HBCasaCebu" target="_blank" rel="noopener noreferrer" class="ulink inline-flex min-h-[44px] items-center px-2 hover:text-fg">Messenger</a>
-      <span class="hidden sm:inline">© <span id="yr"></span> HB Casa Cebu</span>
+      <a data-fb="page" href="https://www.facebook.com/HBCameraCebu" target="_blank" rel="noopener noreferrer" class="ulink inline-flex min-h-[44px] items-center px-2 hover:text-fg">Facebook</a>
+      <a data-fb="messenger" href="https://m.me/HBCameraCebu" target="_blank" rel="noopener noreferrer" class="ulink inline-flex min-h-[44px] items-center px-2 hover:text-fg">Messenger</a>
+      <span class="hidden sm:inline">© <span id="yr"></span> HB Camera Cebu</span>
     </div>
   </div>
 </footer>
 
+<!-- ══════════════ PHOTO VIEWER ══════════════ -->
+<dialog id="lightbox" aria-label="Photo viewer">
+  <img id="lb-img" src="" alt="" />
+  <p id="lb-cap" class="mt-5 px-6 text-center text-[13px] tracking-[.14em] text-cream/85" aria-live="polite"></p>
+  <button id="lb-close" type="button" aria-label="Close photo viewer">
+    <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.4" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <button id="lb-prev" type="button" aria-label="Previous photo">
+    <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.4" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M15 5l-7 7 7 7"/></svg>
+  </button>
+  <button id="lb-next" type="button" aria-label="Next photo">
+    <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.4" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+  </button>
+</dialog>
+
 <!-- ══════════════ MOBILE STICKY CTA ══════════════ -->
 <div id="sticky" class="fixed inset-x-0 bottom-0 z-40 border-t hair bg-bg/95 px-4 pb-[env(safe-area-inset-bottom)] pt-3 backdrop-blur-md lg:hidden">
-  <a data-fb="messenger" href="https://m.me/HBCasaCebu" target="_blank" rel="noopener noreferrer"
+  <a data-fb="messenger" href="https://m.me/HBCameraCebu" target="_blank" rel="noopener noreferrer"
      class="btn whitespace-nowrap flex w-full items-center justify-center gap-3 rounded-full bg-wine px-6 py-3.5 text-[12px] font-semibold tracking-[.14em] text-cream">
     <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.3 2 2 6.2 2 11.7c0 3.1 1.4 5.9 3.7 7.7v3.8l3.4-1.9c.9.3 1.9.4 2.9.4 5.7 0 10-4.2 10-9.7S17.7 2 12 2zm1 12.6-2.6-2.7-5 2.7 5.5-5.8 2.6 2.7 4.9-2.7-5.4 5.8z"/></svg>
     Message us
   </a>
-  <p class="pb-3 pt-2 text-center text-[11px] tracking-[.16em] text-dim">Availability and rates</p>
+  <p class="pb-3 pt-2 text-center text-xs tracking-[.16em] text-dim">Availability and rates</p>
 </div>
 
 <script>
@@ -595,8 +660,8 @@
      Every Messenger button and Facebook link on the page reads from
      these two values, so you never have to hunt through the markup.
      ─────────────────────────────────────────────────────────────── */
-  var FB_PAGE      = 'https://www.facebook.com/HBCasaCebu';
-  var FB_MESSENGER = 'https://m.me/HBCasaCebu';
+  var FB_PAGE      = 'https://www.facebook.com/HBCameraCebu';
+  var FB_MESSENGER = 'https://m.me/HBCameraCebu';
 
   document.querySelectorAll('[data-fb="page"]').forEach(function (a) { a.href = FB_PAGE; });
   document.querySelectorAll('[data-fb="messenger"]').forEach(function (a) { a.href = FB_MESSENGER; });
@@ -653,6 +718,49 @@
   }, { threshold: 0.25 });
   edges.observe(document.getElementById('top'));
   edges.observe(document.getElementById('contact'));
+
+  /* ---------- desktop nav: mark the section being read ---------- */
+  var links = {};
+  nav.querySelectorAll('nav.hidden a').forEach(function (a) { links[a.getAttribute('href').slice(1)] = a; });
+  var spy = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (!e.isIntersecting) return;
+      Object.keys(links).forEach(function (id) { links[id].removeAttribute('aria-current'); });
+      links[e.target.id].setAttribute('aria-current', 'true');
+    });
+  }, { rootMargin: '-45% 0px -50% 0px' });
+  Object.keys(links).forEach(function (id) { spy.observe(document.getElementById(id)); });
+
+  /* ---------- photo viewer ---------- */
+  var lb = document.getElementById('lightbox');
+  if (lb.showModal) {
+    var lbImg = document.getElementById('lb-img'), lbCap = document.getElementById('lb-cap');
+    var figs = [].slice.call(document.querySelectorAll('#gallery figure')), cur = 0;
+    var show = function (i) {
+      cur = (i + figs.length) % figs.length;
+      var im = figs[cur].querySelector('img');
+      lbImg.src = im.currentSrc || im.src;
+      lbImg.alt = im.alt;
+      lbCap.textContent = figs[cur].querySelector('figcaption').textContent.trim() + '  ·  ' + (cur + 1) + ' / ' + figs.length;
+    };
+    figs.forEach(function (f, i) {
+      var b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'lb-open';
+      b.setAttribute('aria-label', 'View larger: ' + f.querySelector('figcaption').textContent.trim());
+      b.addEventListener('click', function () { show(i); lb.showModal(); });
+      f.appendChild(b);
+    });
+    document.getElementById('lb-close').addEventListener('click', function () { lb.close(); });
+    document.getElementById('lb-prev').addEventListener('click', function () { show(cur - 1); });
+    document.getElementById('lb-next').addEventListener('click', function () { show(cur + 1); });
+    lb.addEventListener('click', function (e) { if (e.target === lb) lb.close(); });
+    lb.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowLeft') show(cur - 1);
+      if (e.key === 'ArrowRight') show(cur + 1);
+    });
+    lb.addEventListener('close', function () { figs[cur].querySelector('.lb-open').focus(); });
+  }
 
   /* ---------- mobile menu ---------- */
   var BURGER = '<path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16"/>';

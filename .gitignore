@@ -16,3 +16,8 @@ chkframes/
 Thumbs.db
 desktop.ini
 .DS_Store
+
+# Local tooling
+.claude/
+.netlify/
+netlify-upload/
